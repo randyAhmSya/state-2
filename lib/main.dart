@@ -49,11 +49,11 @@ class _MainScreenState extends State<MainScreen> {
                     ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(
                         content: Text('Kehadiran Disimpan'),
-                        backgroundColor: Colors.purple,
+                        backgroundColor: Colors.blue,
                       ),
                     );
                   },
-                  backgroundColor: Colors.purple.shade700,
+                  backgroundColor: Colors.blue,
                   child: Icon(Icons.save, color: Colors.white),
                 ),
               ),

@@ -22,33 +22,17 @@ class ScreenKehadiran extends StatelessWidget {
                 return Container(
                   margin:
                       const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                  decoration: BoxDecoration(
-                    color: student.isPresent
-                        ? Colors.purple.shade50
-                        : Colors.white,
-                    borderRadius: BorderRadius.circular(10),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.purple.shade100,
-                        blurRadius: 5,
-                        offset: const Offset(0, 2),
-                      ),
-                    ],
-                  ),
                   child: CheckboxListTile(
                     title: Text(
                       student.name,
                       style: TextStyle(
-                        color: student.isPresent
-                            ? Colors.purple.shade700
-                            : Colors.black87,
                         fontWeight: student.isPresent
                             ? FontWeight.bold
                             : FontWeight.normal,
                       ),
                     ),
                     value: student.isPresent,
-                    activeColor: Colors.purple.shade300,
+                    activeColor: Colors.blue,
                     onChanged: (_) => provider.togglePresence(index),
                     controlAffinity: ListTileControlAffinity.trailing,
                   ),
